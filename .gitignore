@@ -1,0 +1,22 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.so
+
+# Environments
+venv/
+.env
+.ipynb_checkpoints
+
+# Data
+*.h5ad
+*.h5seurat
+*.h5
+*.csv
+*.sqlite3
+
+# OS
+.DS_Store
+
+# VSCode
+.vscode/

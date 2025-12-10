@@ -1,7 +1,6 @@
 # anndata_Seurat_Utilities
 
-Utilities to prepare **AnnData (.h5ad)** files for **Seurat / SeuratDisk** conversion  
-and safe exchange between **Python** and **R** single-cell analysis workflows.
+Utilities to prepare **AnnData (.h5ad)** files for **Seurat / SeuratDisk** conversion and safe exchange between **Python** and **R** single-cell analysis workflows.
 
 <!-- Uncomment these once CI & PyPI are active -->
 <!-- 
@@ -11,7 +10,7 @@ and safe exchange between **Python** and **R** single-cell analysis workflows.
 
 ---
 
-## What this package does
+## What this package does?
 
 This library provides the robust function:
 
@@ -32,12 +31,23 @@ which:
 The resulting `.h5ad` file loads reliably in:
 
 ```r
-SeuratDisk::Convert("file.h5ad", dest = "h5seurat")
-LoadH5Seurat("file.h5seurat")
+SeuratDisk::Convert("file.h5ad", dest = "h5seurat", overwrite = TRUE)
+LoadH5Seurat("file.h5seurat", verbose = TRUE,
+                    assays = "RNA",
+                    reductions = NULL,
+                    graphs = NULL,
+                    neighbors = NULL,
+                    images = FALSE) 
+
 ```
+
+_Note from https://mojaveazure.github.io/seurat-disk/articles/convert-anndata.html#converting-from-anndata-to-seurat-via-h5seurat-1 that "The final main parameter is the images parameter; this parameter controls which spatial image data is loaded. All spatial image data are marked global by default, so they are loaded whether or not their associated assays are loaded as well. The images parameter has three special values: NULL for all spatial image data (the default), NA for global spatial image data (typically the same as NULL), or FALSE for no spatial image data."_
 
 
 ## Installation
+
+Current version: 0.1.0
+
 ### Install from TestPyPI (for pre-release testing)
 ```bash
 python -m venv venv && source venv/bin/activate
@@ -53,7 +63,7 @@ pip install \
 Why the extra index URL?
 TestPyPI does not mirror PyPI. Dependencies such as anndata>=0.9 must come from PyPI.
 
-### Insysll official release from PyPI
+### Install official release from PyPI
 
 ```bash
 
@@ -61,9 +71,34 @@ pip install anndata-seurat-utilities
 
 ```
 
+
+### Development install
+
+```bash
+git clone https://github.com/denvercal1234GitHub/anndata_Seurat_Utilities
+cd anndata_Seurat_Utilities
+pip install -e .
+pytest -q
+```
+
+### Tests
+
+```bash
+# create virtual env
+python -m venv venv
+source venv/bin/activate
+# install deps
+pip install -r requirements.txt
+# run pytest
+pytest -q
+```
+
+
+
 ## Minimal usage example 
 
 ```python
+## In Python 
 from anndata_seurat_utils.prepare_for_seurat import (
     prepare_adata_for_seurat_drop_empty_v3
 )
@@ -85,17 +120,14 @@ prepare_adata_for_seurat_drop_empty_v3(
 )
 
 print("Wrote cleaned Seurat-ready file: cleaned_for_seurat.h5ad")
+
+## Now proceed in R with SeuratDisk::Convert and LoadH5Seurat
+
 ```
 
 ## Why using this package?
 
-Direct conversion of AnnData → Seurat using:
-
-```r
-SeuratDisk::Convert("file.h5ad", dest = "h5seurat")
-```
-
-often fails due to:
+Direct conversion of AnnData → Seurat using `LoadH5Seurat` often fails due to:
 
 ### Pandas extension dtypes
 boolean, Int64, or masked arrays serialize as:
@@ -125,6 +157,7 @@ SeuratDisk error: "Missing required datasets 'levels' and 'values'".
 This utility fixes all of these issues.
 
 
+
 ## Requirements
 anndata >= 0.9
 pandas
@@ -133,28 +166,6 @@ scipy
 mygene (only required for optional gene-mapping utilities)
 
 
-## Development install
-
-```bash
-git clone https://github.com/denvercal1234GitHub/anndata_Seurat_Utilities
-cd anndata_Seurat_Utilities
-pip install -e .
-pytest -q
-```
-
-## Tests
-
-```bash
-# create virtual env
-python -m venv venv
-source venv/bin/activate
-# install deps
-pip install -r requirements.txt
-# run pytest
-pytest -q
-```
-
-Current version: 0.1.0
 
 
 ## Contributing

@@ -1,5 +1,12 @@
 # anndata_Seurat_Utilities
 
+**Quick install**
+
+```bash
+pip install anndata-seurat-utilities
+```
+
+
 Utilities to prepare **AnnData (.h5ad)** files for **Seurat / SeuratDisk** conversion and safe exchange between **Python** and **R** single-cell analysis workflows.
 
 <!-- Uncomment these once CI & PyPI are active -->
@@ -111,6 +118,9 @@ LoadH5Seurat("file.h5seurat", verbose = TRUE,
 _Note from https://mojaveazure.github.io/seurat-disk/articles/convert-anndata.html#converting-from-anndata-to-seurat-via-h5seurat-1 that "The final main parameter is the images parameter; this parameter controls which spatial image data is loaded. All spatial image data are marked global by default, so they are loaded whether or not their associated assays are loaded as well. The images parameter has three special values: NULL for all spatial image data (the default), NA for global spatial image data (typically the same as NULL), or FALSE for no spatial image data."_
 
 
+**Full tutorial with more utilities will be added at https://denvercal1234GitHub.github.io/anndata_Seurat_Utilities/**
+
+
 ## Why using this package?
 
 Direct conversion of AnnData → Seurat using `LoadH5Seurat` often fails due to:
@@ -159,4 +169,4 @@ Nguyen, Q. (2025). anndata_Seurat_Utilities.
 https://github.com/denvercal1234GitHub/anndata_Seurat_Utilities
 ```
 
-
+You can obtain the citation also by clicking Code, then Cite this repository.

@@ -162,11 +162,14 @@ Please open an issue or pull request if you’d like to improve the utilities.
 MIT License — see the LICENSE file.
 
 ## Citation
+
 If this package contributes to your work, please cite the repository:
 
-```bash
-Nguyen, Q. (2025). anndata_Seurat_Utilities.
-https://github.com/denvercal1234GitHub/anndata_Seurat_Utilities
-```
-
-You can obtain the citation also by clicking Code, then Cite this repository.
+```bibtex
+@software{Nguyen2025anndata_Seurat_Utilities,
+  author = {Quang Nguyen},
+  title = {anndata_Seurat_Utilities},
+  year = {2025},
+  url = {https://github.com/denvercal1234GitHub/anndata_Seurat_Utilities},
+  version = {0.1.0},
+}

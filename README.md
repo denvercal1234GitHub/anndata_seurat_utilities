@@ -89,13 +89,18 @@ adata = ad.read_h5ad("input.h5ad")
 # Note that if keep_layers is None, it instead looks at drop_layers and deletes every layer listed in drop_layers that exists in the AnnData. If drop_layers is None or empty, nothing is removed.
 prepare_adata_for_seurat_drop_empty_v3(
     adata=adata,
-    out_h5ad_path="cleaned_for_seurat.h5ad",
-    drop_layers=("counts_mouse",),   # optional
-    convert_strings_to_categoricals_on_write=False,
+    out_h5ad_path="/Users/......./cleaned_for_seurat.h5ad",
+    drop_layers=['nonSCVI_normalize','counts'],   # or None or empty will not remove anything when keep_layers=None
+    keep_layers=None, # if None will delete those defined in drop_layers 
+    convert_strings_to_categoricals_on_write=False, # recommended for SeuratDisk
     sanitize_var_names=True,
     sanitize_obs_names=True,
     drop_empty_obs_and_var=True,
     verbose=True,
+    keep_obsm=["X_pca", "X_umap"], # if None will remove all obsm; if 'all' will keep all 
+    keep_obsp=["connectivities"], # if None will remove all obsp; if 'all' will keep all 
+    keep_obs_cols=["sample_id", "nCount_RNA", "nFeature_RNA"], # if None will remove all obsp; if 'all' will keep all 
+    keep_uns=["_scvi_uuid"], # if None will remove all obsp; if 'all' will keep all 
 )
 
 print("Wrote cleaned Seurat-ready file: cleaned_for_seurat.h5ad")

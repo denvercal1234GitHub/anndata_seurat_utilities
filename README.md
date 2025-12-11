@@ -129,6 +129,8 @@ _Note from https://mojaveazure.github.io/seurat-disk/articles/convert-anndata.ht
 
 **Full tutorial with more utilities will be added at https://denvercal1234GitHub.github.io/anndata_Seurat_Utilities/**
 
+**Also, check out https://github.com/scverse/anndataR**
+
 
 ## Why using this package?
 

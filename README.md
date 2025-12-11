@@ -85,6 +85,8 @@ import anndata as ad
 adata = ad.read_h5ad("input.h5ad")
 
 # Clean, sanitize, and write to a Seurat-compatible h5ad
+## Note that if keep_layers is not None, it treats keep_layers as a whitelist and removes every layer whose name is not in keep_layers. drop_layers is ignored in this case.
+# Note that if keep_layers is None, it instead looks at drop_layers and deletes every layer listed in drop_layers that exists in the AnnData. If drop_layers is None or empty, nothing is removed.
 prepare_adata_for_seurat_drop_empty_v3(
     adata=adata,
     out_h5ad_path="cleaned_for_seurat.h5ad",
@@ -105,6 +107,7 @@ print("Wrote cleaned Seurat-ready file: cleaned_for_seurat.h5ad")
 The resulting `.h5ad` file loads reliably in:
 
 ```r
+
 SeuratDisk::Convert("file.h5ad", dest = "h5seurat", overwrite = TRUE)
 LoadH5Seurat("file.h5seurat", verbose = TRUE,
                     assays = "RNA",
@@ -113,6 +116,7 @@ LoadH5Seurat("file.h5seurat", verbose = TRUE,
                     neighbors = NULL,
                     images = FALSE) 
 
+### If you run into memory issues, try running DietSeurat next before further downstream processing, e.g., Azimuth etc.
 ```
 
 _Note from https://mojaveazure.github.io/seurat-disk/articles/convert-anndata.html#converting-from-anndata-to-seurat-via-h5seurat-1 that "The final main parameter is the images parameter; this parameter controls which spatial image data is loaded. All spatial image data are marked global by default, so they are loaded whether or not their associated assays are loaded as well. The images parameter has three special values: NULL for all spatial image data (the default), NA for global spatial image data (typically the same as NULL), or FALSE for no spatial image data."_

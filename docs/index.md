@@ -1,6 +1,6 @@
-# anndata_Seurat_Utilities
+# anndata_seurat_utilities
 
-Welcome to the documentation for **anndata_Seurat_Utilities**,  
+Welcome to the documentation for **anndata_seurat_utilities**,  
 a Python package designed to ensure seamless interoperability between  
 **AnnData (.h5ad)** objects and downstream **Seurat / SeuratDisk** workflows in R.
 
@@ -17,7 +17,7 @@ a Python package designed to ensure seamless interoperability between
 ## Quick Start
 
 ```bash
-pip install anndata-seurat-utilities
+pip install anndata_seurat_utilities
 ```
 
 Please see the Usage Guide for an example at https://github.com/denvercal1234GitHub/anndata_Seurat_Utilities

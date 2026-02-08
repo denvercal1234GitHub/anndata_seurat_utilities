@@ -1,3 +1,8 @@
 [build-system]
 requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
+
+[project]
+name = "sage-broccoliqn"
+version = "0.1.0"
+description = "A package packed with utilities for real-life single-cell RNAseq analysis from the Sage Lab."

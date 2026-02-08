@@ -1,4 +1,4 @@
-"""anndata_seurat_utilities package"""
+"""sage_broccoliqn package"""
 
 __all__ = ["prepare_adata_for_seurat_drop_empty_v3", "__version__"]
 

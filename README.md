@@ -1,9 +1,9 @@
-# anndata_seurat_utilities
+# sage_broccoliqn
 
 **Quick install**
 
 ```bash
-pip install anndata_seurat_utilities
+pip install sage_broccoliqn
 ```
 
 
@@ -12,7 +12,7 @@ Utilities to prepare **AnnData (.h5ad)** files for **Seurat / SeuratDisk** conve
 <!-- Uncomment these once CI & PyPI are active -->
 <!-- 
 [![PyPI](https://img.shields.io/pypi/v/anndata-seurat-utilities.svg)](https://pypi.org/project/anndata-seurat-utilities/)
-[![CI](https://github.com/denvercal1234GitHub/anndata_Seurat_Utilities/actions/workflows/ci.yml/badge.svg)](https://github.com/denvercal1234GitHub/anndata_Seurat_Utilities/actions)
+[![CI](https://github.com/denvercal1234GitHub/sage_broccoliqn/actions/workflows/ci.yml/badge.svg)](https://github.com/denvercal1234GitHub/sage_broccoliqn/actions)
 -->
 
 ---
@@ -48,7 +48,7 @@ Current version: 0.1.1
 
 pip install anndata-seurat-utilities
 ## Quick test; if printing version then succeeded
-python -c "import anndata_seurat_utilities; print(anndata_seurat_utilities.__version__)"
+python -c "import sage_broccoliqn; print(sage_broccoliqn.__version__)"
 
 ```
 
@@ -56,8 +56,8 @@ python -c "import anndata_seurat_utilities; print(anndata_seurat_utilities.__ver
 ### Development install
 
 ```bash
-git clone https://github.com/denvercal1234GitHub/anndata_seurat_utilities
-cd anndata_seurat_utilities
+git clone https://github.com/denvercal1234GitHub/sage_broccoliqn
+cd sage_broccoliqn
 pip install -e .
 pytest -q
 ```
@@ -76,7 +76,7 @@ scipy
 
 ```python
 ## In Python 
-from anndata_seurat_utilities.prepare_for_seurat import (
+from sage_broccoliqn.prepare_for_seurat import (
     prepare_adata_for_seurat_drop_empty_v3
 )
 import anndata as ad
@@ -127,7 +127,7 @@ LoadH5Seurat("file.h5seurat", verbose = TRUE,
 _Note from https://mojaveazure.github.io/seurat-disk/articles/convert-anndata.html#converting-from-anndata-to-seurat-via-h5seurat-1 that "The final main parameter is the images parameter; this parameter controls which spatial image data is loaded. All spatial image data are marked global by default, so they are loaded whether or not their associated assays are loaded as well. The images parameter has three special values: NULL for all spatial image data (the default), NA for global spatial image data (typically the same as NULL), or FALSE for no spatial image data."_
 
 
-**Full tutorial with more utilities will be added at https://denvercal1234GitHub.github.io/anndata_seurat_utilities/**
+**Full tutorial with more utilities will be added at https://denvercal1234GitHub.github.io/sage_broccoliqn/**
 
 **Also, check out https://github.com/scverse/anndataR**
 
@@ -177,10 +177,10 @@ MIT License — see the LICENSE file.
 If this package contributes to your work, please cite the repository:
 
 ```bibtex
-@software{Nguyen2025anndata_seurat_utilities,
+@software{Nguyen2025sage_broccoliqn,
   author = {Quang Nguyen},
-  title = {anndata_seurat_utilities},
+  title = {sage_broccoliqn},
   year = {2025},
-  url = {https://github.com/denvercal1234GitHub/anndata_seurat_utilities},
+  url = {https://github.com/denvercal1234GitHub/sage_broccoliqn},
   version = {0.1.0},
 }

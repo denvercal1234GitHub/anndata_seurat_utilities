@@ -1,8 +1,10 @@
 site_name: anndata_seurat_utilities Documentation
-site_url: https://denvercal1234github.github.io/anndata_seurat_utilities
+site_url: https://denvercal1234github.github.io/anndata_seurat_utilities/
 site_author: Quang Nguyen
+
 repo_url: https://github.com/denvercal1234GitHub/anndata_seurat_utilities
 repo_name: denvercal1234GitHub/anndata_seurat_utilities
+
 
 theme:
   name: material
@@ -18,8 +20,6 @@ theme:
 nav:
   - Home: index.md
   - Installation: installation.md
-  - Usage: usage.md
-  - API Reference: api.md
   - Development: development.md
 
 markdown_extensions:

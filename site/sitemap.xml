@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://denvercal1234github.github.io/anndata_Seurat_Utilities/</loc>
+         <loc>https://denvercal1234github.github.io/anndata_seurat_utilities/</loc>
          <lastmod>2026-02-08</lastmod>
     </url>
     <url>
-         <loc>https://denvercal1234github.github.io/anndata_Seurat_Utilities/development/</loc>
+         <loc>https://denvercal1234github.github.io/anndata_seurat_utilities/development/</loc>
+         <lastmod>2026-02-08</lastmod>
+    </url>
+    <url>
+         <loc>https://denvercal1234github.github.io/anndata_seurat_utilities/installation/</loc>
          <lastmod>2026-02-08</lastmod>
     </url>
 </urlset>

@@ -23,3 +23,5 @@ pip install sage_broccoliqn
 Please see the Usage Guide for an example at https://github.com/denvercal1234GitHub/sage_broccoliqn
 
 More utilities (including advanced visualisation) will be provided soon. Cheers!
+
+<!-- trigger rebuild -->

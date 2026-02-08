@@ -32,7 +32,7 @@ Utilities to prepare **AnnData (.h5ad)** files for **Seurat / SeuratDisk** conve
 
 <!-- Uncomment these once CI & PyPI are active -->
 <!-- 
-[![PyPI](https://img.shields.io/pypi/v/anndata-seurat-utilities.svg)](https://pypi.org/project/anndata-seurat-utilities/)
+[![PyPI](https://img.shields.io/pypi/v/sage_broccoliqn.svg)](https://pypi.org/project/sage_broccoliqn/)
 [![CI](https://github.com/denvercal1234GitHub/sage_broccoliqn/actions/workflows/ci.yml/badge.svg)](https://github.com/denvercal1234GitHub/sage_broccoliqn/actions)
 -->
 
@@ -67,7 +67,7 @@ Current version: 0.1.1
 
 ```bash
 
-pip install anndata-seurat-utilities
+pip install sage_broccoliqn
 ## Quick test; if printing version then succeeded
 python -c "import sage_broccoliqn; print(sage_broccoliqn.__version__)"
 

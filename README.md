@@ -1,9 +1,9 @@
-# anndata_Seurat_Utilities
+# anndata_seurat_utilities
 
 **Quick install**
 
 ```bash
-pip install anndata-seurat-utilities
+pip install anndata_seurat_utilities
 ```
 
 
@@ -56,8 +56,8 @@ python -c "import anndata_seurat_utilities; print(anndata_seurat_utilities.__ver
 ### Development install
 
 ```bash
-git clone https://github.com/denvercal1234GitHub/anndata_Seurat_Utilities
-cd anndata_Seurat_Utilities
+git clone https://github.com/denvercal1234GitHub/anndata_seurat_utilities
+cd anndata_seurat_utilities
 pip install -e .
 pytest -q
 ```
@@ -127,7 +127,7 @@ LoadH5Seurat("file.h5seurat", verbose = TRUE,
 _Note from https://mojaveazure.github.io/seurat-disk/articles/convert-anndata.html#converting-from-anndata-to-seurat-via-h5seurat-1 that "The final main parameter is the images parameter; this parameter controls which spatial image data is loaded. All spatial image data are marked global by default, so they are loaded whether or not their associated assays are loaded as well. The images parameter has three special values: NULL for all spatial image data (the default), NA for global spatial image data (typically the same as NULL), or FALSE for no spatial image data."_
 
 
-**Full tutorial with more utilities will be added at https://denvercal1234GitHub.github.io/anndata_Seurat_Utilities/**
+**Full tutorial with more utilities will be added at https://denvercal1234GitHub.github.io/anndata_seurat_utilities/**
 
 **Also, check out https://github.com/scverse/anndataR**
 
@@ -177,10 +177,10 @@ MIT License — see the LICENSE file.
 If this package contributes to your work, please cite the repository:
 
 ```bibtex
-@software{Nguyen2025anndata_Seurat_Utilities,
+@software{Nguyen2025anndata_seurat_utilities,
   author = {Quang Nguyen},
   title = {anndata_Seurat_Utilities},
   year = {2025},
-  url = {https://github.com/denvercal1234GitHub/anndata_Seurat_Utilities},
+  url = {https://github.com/denvercal1234GitHub/anndata_seurat_utilities},
   version = {0.1.0},
 }

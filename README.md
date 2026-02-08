@@ -179,7 +179,7 @@ If this package contributes to your work, please cite the repository:
 ```bibtex
 @software{Nguyen2025anndata_seurat_utilities,
   author = {Quang Nguyen},
-  title = {anndata_Seurat_Utilities},
+  title = {anndata_seurat_utilities},
   year = {2025},
   url = {https://github.com/denvercal1234GitHub/anndata_seurat_utilities},
   version = {0.1.0},

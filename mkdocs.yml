@@ -1,8 +1,8 @@
-site_name: anndata_Seurat_Utilities Documentation
-site_url: https://denvercal1234github.github.io/anndata_Seurat_Utilities
+site_name: anndata_seurat_utilities Documentation
+site_url: https://denvercal1234github.github.io/anndata_seurat_utilities
 site_author: Quang Nguyen
-repo_url: https://github.com/denvercal1234GitHub/anndata_Seurat_Utilities
-repo_name: denvercal1234GitHub/anndata_Seurat_Utilities
+repo_url: https://github.com/denvercal1234GitHub/anndata_seurat_utilities
+repo_name: denvercal1234GitHub/anndata_seurat_utilities
 
 theme:
   name: material

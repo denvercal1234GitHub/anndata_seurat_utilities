@@ -7,6 +7,7 @@ __pycache__/
 venv/
 .env
 .ipynb_checkpoints
+.venv/
 
 # Data
 *.h5ad
@@ -21,4 +22,11 @@ venv/
 # VSCode
 .vscode/
 
+
+# Packaging artifacts
+*.egg-info/
+build/
+dist/
+
+# MkDocs
 site/

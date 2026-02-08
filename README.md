@@ -48,7 +48,7 @@ Current version: 0.1.1
 
 pip install anndata-seurat-utilities
 ## Quick test; if printing version then succeeded
-python -c "import anndata_seurat_utils; print(anndata_seurat_utils.__version__)"
+python -c "import anndata_seurat_utilities; print(anndata_seurat_utilities.__version__)"
 
 ```
 
@@ -76,7 +76,7 @@ scipy
 
 ```python
 ## In Python 
-from anndata_seurat_utils.prepare_for_seurat import (
+from anndata_seurat_utilities.prepare_for_seurat import (
     prepare_adata_for_seurat_drop_empty_v3
 )
 import anndata as ad

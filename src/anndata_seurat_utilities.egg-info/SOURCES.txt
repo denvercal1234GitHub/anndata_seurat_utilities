@@ -2,11 +2,11 @@ LICENSE
 README.md
 pyproject.toml
 setup.cfg
+src/anndata_seurat_utilities/__init__.py
+src/anndata_seurat_utilities/prepare_for_seurat.py
 src/anndata_seurat_utilities.egg-info/PKG-INFO
 src/anndata_seurat_utilities.egg-info/SOURCES.txt
 src/anndata_seurat_utilities.egg-info/dependency_links.txt
 src/anndata_seurat_utilities.egg-info/requires.txt
 src/anndata_seurat_utilities.egg-info/top_level.txt
-src/anndata_seurat_utils/__init__.py
-src/anndata_seurat_utils/prepare_for_seurat.py
 tests/test_prepare.py

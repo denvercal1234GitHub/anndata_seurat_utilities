@@ -1,9 +1,11 @@
-site_name: anndata_seurat_utilities Documentation
-site_url: https://denvercal1234github.github.io/anndata_seurat_utilities/
+site_name: sage_broccoliqn Documentation
+site_url: https://denvercal1234github.github.io/sage_broccoliqn/
+
+
 site_author: Quang Nguyen
 
-repo_url: https://github.com/denvercal1234GitHub/anndata_seurat_utilities
-repo_name: denvercal1234GitHub/anndata_seurat_utilities
+repo_url: https://github.com/denvercal1234GitHub/sage_broccoliqn
+repo_name: denvercal1234GitHub/sage_broccoliqn
 
 
 theme:

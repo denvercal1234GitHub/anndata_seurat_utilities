@@ -7,9 +7,9 @@ Current version: 0.1.1
 
 ```bash
 
-pip install anndata-seurat-utilities
+pip install sage_broccoliqn
 ## Quick test; if printing version then succeeded
-python -c "import anndata_seurat_utilities; print(anndata_seurat_utilities.__version__)"
+python -c "import sage_broccoliqn; print(sage_broccoliqn.__version__)"
 
 ```
 
@@ -17,8 +17,8 @@ python -c "import anndata_seurat_utilities; print(anndata_seurat_utilities.__ver
 ### Development install
 
 ```bash
-git clone https://github.com/denvercal1234GitHub/anndata_seurat_utilities
-cd anndata_seurat_utilities
+git clone https://github.com/denvercal1234GitHub/sage_broccoliqn
+cd sage_broccoliqn
 pip install -e .
 pytest -q
 ```
